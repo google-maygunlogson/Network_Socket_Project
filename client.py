@@ -3,15 +3,15 @@ import socket
 def send_get(s, key):
     req = 'GET:'+key
     s.sendall(req.encode('utf-8'))
-    print(s.recv(1024))
+    print(str(s.recv(1024))[2:-1]  )
 def send_post(s, key, value):
     req = 'POST:' + key + ":" + value
     s.sendall(req.encode('utf-8'))
-    print(s.recv(1024))
+    print(str(s.recv(1024))[2:-1]  )
 def send_dump(s):
     req = "DUMP"
     s.sendall(req.encode('utf-8'))
-    print(s.recv(1024))
+    print(str(s.recv(1024))[2:-1]  )
 
 
 

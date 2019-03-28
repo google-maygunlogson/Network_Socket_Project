@@ -21,7 +21,7 @@ hashmap = {}
 s= socket.socket()
 
 
-port = 12345
+port = 54321
 
 s.bind(('127.0.0.1',port))
 
@@ -43,11 +43,9 @@ while True:
         c.send(b'post received')
         handle_post(req[1],req[2])
     elif req[0] == 'GET':
-        
         res = handle_get(req[1])
         c.send(res.encode('utf-8'))
     elif req[0] == 'DUMP':
-        
         res = handle_dump()
         c.send(res.encode('utf-8'))
 

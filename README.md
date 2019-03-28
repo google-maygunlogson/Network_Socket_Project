@@ -1,6 +1,6 @@
 # USER MANUAL
 ## BASICS
-Run server THEN client with python 3.
+Run server THEN proxy THEN client with python 3.
 ## TO PUT KEY AND VALUE IN DICTIONARY 
 PUT KEY VALUE
 ## TO GET VALUE
